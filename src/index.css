@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gumela;
+  src: url('../src/assets/fonts/Gumela\ Regular.otf');
+}
+
 body {
   margin: 0;
   font-family: 'Noto Sans','Poppins', sans-serif;

@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as LinkRs } from 'react-scroll'
 
-
-import { CgShapeHexagon } from 'react-icons/cg'
+import {TbSkateboard} from 'react-icons/tb'
 import { BiSearch } from 'react-icons/bi'
 
 const NavBar = styled.nav`
@@ -20,13 +19,11 @@ const NavBar = styled.nav`
 `
 
 const Logo = styled.div`
-    display: flex;
-    align-items: center;
-
-    span {
-        margin-left: 1rem;
+    /* logo text */
+    /* span {
+        margin-left: .5rem;
         font-size: 18px;
-    }
+    } */
 `
 
 //pages styles
@@ -98,8 +95,8 @@ function Navbar() {
         <NavBar>
             <a href="/">
                 <Logo>
-                    <CgShapeHexagon size={40}/>
-                    <span>Saroj<br/>Niraula</span>
+                    <TbSkateboard size={50} color="#FCA61F"/>
+                    {/* <span>Saroj<br/>Niraula</span> */}
                 </Logo>
             </a>
             <Links>
