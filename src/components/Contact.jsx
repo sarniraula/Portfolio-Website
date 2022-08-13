@@ -39,7 +39,7 @@ const ContactLink = styled.div`
 
 function Contact() {
   return (
-    <Background>
+    <Background className='contact'>
         <Container>
             <Heading>
                 <Title>Let's<br />Discuss<br/>Your Project</Title>

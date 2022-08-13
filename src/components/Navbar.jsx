@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as LinkRs } from 'react-scroll'
 
 
 import { CgShapeHexagon } from 'react-icons/cg'
@@ -7,7 +8,7 @@ import { BiSearch } from 'react-icons/bi'
 
 const NavBar = styled.nav`
     display: flex;
-    aligin-items: center;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: 20px auto;
@@ -45,16 +46,19 @@ const Links = styled.div`
         font-size: 13px;
         font-weight: 300;
 
+        li {
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+                transition: 0.2s;
+                font-weight: 500;
+            }
+        }
+
         a {
             text-decoration: none;
-            color: black;
-
-            // &:hover{
-            //     color: ${props => props.theme.textGrey};
-            //     transform: scale(1.1);
-            //     // transition: 0.2s ease-out;
-            //     font-weight: 500;
-            // }
+            color: #2c2c0a;
         }
     }
 `
@@ -101,13 +105,13 @@ function Navbar() {
             <Links>
                 <ul>
                     <li>
-                        <a href="/">About</a>
+                        <LinkRs to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</LinkRs>
                     </li>
                     <li>
-                        <a href="/">Portfolio</a>
+                        <LinkRs to="portfolio" spy={true} smooth={true} offset={50} duration={500}>Portfolio</LinkRs>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <LinkRs to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</LinkRs>
                     </li>
                 </ul>
             </Links>

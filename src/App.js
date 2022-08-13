@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import Profile from './components/Profile';
 import Contact from './components/Contact';
 import LatestProjects from './components/LatestProjects';
+import SkillsAndExperience from './components/SkillsAndExperience';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
     }}>
       <Navbar />
       <Profile />
+      <SkillsAndExperience id="skills"/>
       <LatestProjects />
       <Contact />
     </ThemeProvider>

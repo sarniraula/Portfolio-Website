@@ -4,7 +4,7 @@ import { Container } from './Container.styled'
 
 const Background = styled.div`
     background: rgb(255,255,255);
-    background: ${props => props.theme.primaryBgColor};
+    /* background: ${props => props.theme.primaryBgColor}; */
 `
 
 const ColOne = styled.div`
@@ -43,7 +43,7 @@ const Image = styled.img`
 
 function LatestProjects() {
   return (
-    <Background>
+    <Background className="portfolio">
         <Container>
             <ColOne>
                 <Title>Latest<br />Projects</Title>
